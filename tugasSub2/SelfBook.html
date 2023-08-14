@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tugas submission 2</title>
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+  <!--header-->
+  <!--header-->
+  <header>
+    <a href="#" class="logo">SelfBook</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#layanan">Tambah</a></li>
+      <li><a href="#pilih">Sudah</a></li>
+      <li><a href="#con">Belum</a></li>
+    </ul>
+  </header>
+  <!--Home Section-->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1>Self <br> Book</h1>
+      <p>Jangan Membaca Sampai Koma,<br>Tapi Bacalah Sampai Titik. </p>
+      <a href="#" class="btn-home">Mari Membaca</a>
+    </div>
+  </section>
+  <!--container-->
+  <div class="wrapper">
+      <div class="container bg-white shadow">
+        <h2 class="container-header text-center">Tambah Buku</h2>
+        <form class="form" action="#" id="form">
+          <div class="form-group form-title">
+            <input type="text" id="judul" name="judul" required placeholder="Judul Buku" />
+          </div>
+          <div class="form-group form-title">
+            <input type="text" id="penulis" name="penulis" required placeholder="Penulis" />
+          </div>
+          <div class="form-group form-title">
+            <input type="date" id="tanggal" name="tanggal" required />
+          </div>
+          <section class="tombol">
+          <button type="submit" class="submit" id="btn-submit">Tambah List</button>
+          <button type="submit" class="submit" id="btn-reset">Hapus List</button>
+          <div class="jmlh-book">
+            <h3>Jumlah Buku:</h3>
+            <h4 id="total-books"></h4>
+          </div>
+        </section>
+         </form>
+      </div>
+      <div class="container2">
+        <h2 class="container-header">Belum Dibaca: <span id="unread-book"></span></h2>
+
+        <div class="list-item" id="books"></div>
+      </div>
+      <div class="container2">
+        <h2 class="container-header">Sudah Dibaca: <span id="read-book"></span></h2>
+
+        <div class="list-item" id="books-items"></div>
+      </div>
+    </div>
+    <div class="no-list"></div>
+    <!--footer -->
+    <footer class="end">
+        <p>Saya Sedang Belajar Dasar Pemrograman Web &#169; 2023, Dicoding Academy</p>
+      </footer>
+  <!--link untuk js -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
